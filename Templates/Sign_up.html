@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="style_logins.css">
+</head>
+
+<body>
+
+  <!-- Sign up -->
+
+
+  <div class="box_menu_2">
+
+
+    <!-- Sign up Menu -->
+
+    <div class="container">
+
+
+      <h5>Sign up</h5>
+
+      <p>Username and password must be between 6 and 12 characters</p>
+
+      <!-- Inputs Menu -->
+      <form  class="signup_form" id="signupForm"> 
+        
+      <div class="inputs">
+        <input type="text" placeholder="Enter Username" name="username">
+        <br>
+        <input type="password" placeholder="Enter Password" name="password">
+        <br>
+        <input type="password" placeholder="Confirm Password" name="confirm_password">
+      </div>
+
+      <br>
+
+      <!-- Sign Up button -->
+
+        <br> <button type="submit"> Sign up </button>
+      </form>
+    
+      <p id="errorMessage" class="error" ></p>
+      
+
+    </div>
+
+
+    <div class="container_2">
+      <img src="Images/Logo.png" alt="The Logo" class="center_image">
+
+
+    </div>
+
+  </div>
+
+  <script src="API/signup.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,462 @@
+html,
+div,
+img {
+  padding: 0;
+  margin: 0;
+  background-clip: padding-box;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  /* overflow: auto; */
+}
+
+body {
+  background-image: linear-gradient(123deg, rgb(178, 255, 213) 15%, rgb(9, 85, 228) 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family:sans-serif;
+  margin:0px;
+  padding:0px;
+
+}
+
+
+/*position of the tabs*/
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.displaycenter {
+  display: inline-block;
+}
+
+/*search bar*/
+.container_search_bar{
+  padding: 1em;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+ 
+}
+.search-bar{
+  max-width: 160%;
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  border-radius: 6em;
+  font-size: 0.5em;
+  color: #cac7ff;
+}
+.search-bar input{
+  background: transparent;
+  border: 0;
+  flex: 1 ;
+  outline: none;
+  padding: 0.6em 2em;
+  font-size: 2.5em;
+  color: black;
+}
+.search-bar button img{
+  width: 1.5em;
+}
+
+.search-bar button {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  cursor: pointer;
+  margin-left:3px;
+}
+
+#Remove img {
+  width: 49px; 
+  
+}
+
+#Add img {
+  width: 49px;  
+}
+
+
+.search-bar button{
+  border:none;
+  border-radius: 10em;
+  width: 3em;
+  height: 3em;
+  background: #58629b;
+  margin-top: 0.3em;
+  margin-right: 0.4em;
+}
+
+/*footers for souvenirs pages*/
+footer {
+  position: fixed;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  background-color: rgb(8, 42, 233);
+  padding: 10px 0;
+  margin-left: -40px;
+}
+
+
+/* MAIN MENU - Navbar*/
+ul#mainmenu {
+  height: auto;
+  width: auto;
+  list-style-type:none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-image: linear-gradient(123deg, rgb(150, 150, 197) 15%, rgb(134, 132, 221) 100%);
+  align-items: stretch;
+  float:none;
+}
+
+ li a {
+  position: static;
+  display: flex;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  font-size: 1.7em;
+  text-decoration: none;
+  transition: all 500ms;
+}
+
+li a:hover {
+  background-image: linear-gradient(123deg, rgb(111, 111, 146) 15%, rgb(74, 73, 105) 100%);
+  font-size: 1.9em;
+  font-size-adjust: 0.5;
+
+}
+
+ .menu_image{
+  padding: 1em;
+  object-fit: fill;
+  height: auto;
+  width: auto;
+  max-height: 3.6em;
+  max-width: 4em;
+  
+}
+
+/* For dropdown */
+
+.dropdown {
+  float: left; 
+  overflow: hidden;
+ 
+}
+
+.dropdown .dropbtn {
+  border: none;
+  outline: none;
+  color: white;
+  background-color: inherit;
+  font-family: inherit;
+  font-weight: 400;
+  margin: 0;
+
+  position: static;
+  display: flex;
+  text-align: center;
+  padding: 1em;
+  font-size: 1.7em;
+  text-decoration: none;
+  transition: all 500ms;
+}
+
+.dropdown .dropbtn:active {
+  background-image: linear-gradient(123deg, rgb(111, 111, 146) 15%, rgb(74, 73, 105) 100%);
+  font-size: 1.9em;
+  font-size-adjust: 0.5;
+
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+   background-image:linear-gradient(123deg, rgb(150, 150, 197) 15%, rgb(134, 132, 221) 100%); 
+  /* background-color: purple; */
+  min-width: 2em;
+  margin-top:70px;
+  padding: inherit;
+  z-index: 1;
+  font-size:inherit;
+
+  border: 3px solid rgba(163, 22, 182, 0.63);
+  border-radius: 6px;
+ 
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 1em;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover{
+
+  background-image: linear-gradient(123deg, rgb(111, 111, 146) 15%, rgb(74, 73, 105) 100%);
+  font-size: 1.7em;
+
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  overflow:hidden;
+} 
+
+
+/*lists of souvenirs*/
+.souvenir table {
+  font-family: arial, sans-serif;
+  width: 50%;
+  margin-left: 25%;
+}
+.souvenir td {
+  text-align: left;
+  padding: 8px;
+  background: #6547db;
+  color: antiquewhite;
+  padding: 0.5em 1.5em 1em;
+  text-align: center;
+  font-size: medium;
+}
+.souvenir th {
+  font-size:larger;
+  padding: 8px;
+  background: #6547db;
+  color: antiquewhite;
+  padding: 0.5em 1.5em 1em;
+  text-align: center;
+}
+.souvenir h1{
+  font-size: 4em;
+  padding: 0em;
+  color: blue;
+  margin: 0.4em;
+  font-family: MV_Boli;
+  text-align: center;
+}
+
+
+
+/* Text container */
+
+.container_centered{
+  position: static;
+  margin: auto;
+  padding: 1em;
+  width: 63%;
+  justify-content:center;
+  word-wrap: break-word;
+  color:black;
+  overflow: hidden;
+}
+
+.container_centered p {
+  text-align:justify;
+  font-size: 25px;
+  font-weight: 500;
+  margin: 0;
+  padding : 0;
+  line-height: 1;
+  margin-bottom: 25px;
+
+}
+
+/* Subtitle */
+.container_centered h5{
+  font-size: 40px;
+  font-weight: 600;
+  margin:0;
+  margin-bottom:50px;
+  padding:0;
+  line-height: 1; 
+  text-align: center;
+  
+}
+
+/* Title */
+.container_centered h6{
+  font-size: 100px;
+  text-align: center;
+  /* font-family:monospace; */
+  font-weight: 800;
+  margin:auto;
+  margin-bottom:25px;
+  margin-top:30px;
+  padding:0;
+  line-height: 1;  
+  color:rgb(75, 9, 228);
+  background-image: linear-gradient(123deg, rgb(240, 178, 255) 15%, rgb(75, 9, 228) 100%);
+  -webkit-background-clip:text;
+  background-clip:text;
+  -webkit-text-fill-color:transparent; 
+  -webkit-text-stroke: 2px black;
+  
+}
+
+.container_centered i{
+  font-size: 30px;
+  font-weight: 600;
+  margin:0;
+  margin-bottom:25px;
+  padding:0;
+  line-height: 1; 
+ 
+}
+
+.container_centered img{
+  border-radius: 10px;
+  max-width: 100%;
+  width:80%;
+  height: auto;
+  margin-bottom:45px;
+  margin-top:45px;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  filter: drop-shadow(2px 2px 2.5px rgb(25, 90, 187));
+}
+
+
+/* World map */
+
+.world_map{
+  position: relative;
+  width: 1100px;
+  height: 550px;
+  margin:auto;
+  overflow: hidden;
+  position: relative;
+  border-left: solid 2px black;
+  border-right: solid 2px black;
+  padding:10px;
+  background-color: rgb(105, 170, 223);
+  display: block;
+ 
+}
+
+.show_countries{
+  position: static;
+  height: 70px;
+  width: 1100px;
+  padding:10px;
+  border: solid 2px black;
+
+  margin:auto;
+  overflow: hidden;
+  background-color: #a0aebd;
+}
+
+.show_countries p{
+  text-align:center;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 1;
+
+}
+
+
+.world_map #map {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1200px;
+  height: 700px;
+  
+} 
+
+#map {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1200px;
+  height: 700px;
+  
+} 
+
+/* Admin page */
+.admin_buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.table-container button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  background-image: linear-gradient(123deg, rgb(150, 150, 197) 15%, rgb(134, 132, 221) 100%);
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.table-container button:hover {
+  background-image: linear-gradient(123deg, rgb(111, 111, 146) 15%, rgb(74, 73, 105) 100%);
+}
+
+.table-container {
+  background-color: #f2f2f2;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 1000px; 
+
+  position: static;
+  margin: auto;
+  width:1000px;
+  justify-content:center;
+  word-wrap: break-word;
+  overflow: hidden;
+
+}
+
+.table-container h2 {
+  margin-top: 10px;
+}
+
+.element-list {
+  list-style: none;
+  padding: 0;
+  border: 3px solid black;;
+}
+
+
+table.element-list{
+  width: 100%;
+  border-collapse: collapse;
+  display: none;
+}
+
+table.element-list th,
+table.element-list td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+table.element-list th {
+  background-color: #f2f2f2;
+}
